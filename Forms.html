@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <style>
+        .image {
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .clear {
+            margin-left: 81%;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="./images/NareshIT.png" alt="" class="image"><hr><br> 
+    <form action="" class="form">
+        <label for="name">Full Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Your answer"><hr><br>
+
+        <label for="contact">Contact No (Whatsapp)</label><br>
+        <input type="number" name="contact" id="contact" placeholder="Your answer"><hr><br>
+
+        <label for="email">E-Mail ID</label><br>
+        <input type="email" name="email" id="email" placeholder="Your answer"><hr><br>
+
+        <label for="course">Course</label><br>
+        <select name="course" id="course">
+            <option value="fullstackpython">Full Stack Python</option>
+            <option value="fullstackjava">Full Stack Java</option>
+            <option value=".net">C#.net</option>
+        </select><hr><br>
+
+        <label for="mode">Mode of Training</label><br>
+        <select name="mode" id="mode">
+            <option value="online">Online</option>
+            <option value="offline">Offline</option>
+        </select><hr><br>
+
+        <label for="payment">Upload Your Payment Receipt</label><br>
+        <input type="file" id="payment"><hr><br>
+
+        <input type="submit" value="Submit" class="submit">
+        <input type="reset" value="Clear Form" class="clear">
+    </form>
+</body>
+</html>
